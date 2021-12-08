@@ -1,0 +1,17 @@
+<div c>
+  <form class="formulaire" (ngSubmit)="addContact()">
+    <div class="champForm">
+      <label for="firstName">Nom complet</label>
+      <input type="text" name="name" required [(ngModel)]="contact.name">
+    </div>
+    <div class="champForm">
+      <label for="lastName">Pseudo</label>
+      <input type="text" name="pseudo" required [(ngModel)]="contact.pseudo">
+    </div>
+    <div class="champForm">
+      <label for="email">E-mail</label>
+      <input type="text" name="email" required [(ngModel)]="contact.email">
+    </div>
+    <button type="submit" class="boutton">Ajouter</button>
+  </form>
+</div>

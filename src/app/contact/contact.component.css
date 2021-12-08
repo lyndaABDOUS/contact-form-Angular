@@ -1,0 +1,40 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.champForm {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.boutton {
+  height: 50px;
+  width: 150px;
+  align-self: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: darkblue;
+  border: solid darkblue 2px;
+  border-radius: 30px;
+}
+
+input {
+  border-radius: 15px;
+  border: solid darkblue 2px ;
+  height: 30px;
+  width: 300px;
+  margin: 10px 0px;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input::content{
+  background-color: darkblue;
+  color: white;
+}

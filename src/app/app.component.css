@@ -1,0 +1,46 @@
+* {
+  font-size: 25px;
+  color: darkblue;
+  text-align: center;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header {
+    color:white;
+    font-size: 48px;
+    background-color: darkblue;
+    text-align: center;
+  }
+
+  .div1 {
+    margin: 100px 20px;
+    border: solid darkblue 2px;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 35px;
+    text-decoration:underline;
+    margin-bottom: 50px ;
+  }
+
+  .div2 {
+    margin: 100px 20px;
+    border: solid darkblue 2px;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  .div3 {
+    margin: 100px 20px;
+    border: solid darkblue 2px;
+    height: fit-content;
+    padding: 30px;
+  }
