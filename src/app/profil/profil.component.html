@@ -1,0 +1,11 @@
+<div *ngIf="contact">
+  <h1>{{contact.name}}</h1>
+  <p>{{contact.username}}</p>
+  <p>{{contact.email}}</p>
+  <hr>
+  <input type="text" [(ngModel)]="contact.name" (change)="contactChanged()">
+</div>
+
+<div *ngIf="!contact">
+  <h1>Choisi</h1>
+</div>

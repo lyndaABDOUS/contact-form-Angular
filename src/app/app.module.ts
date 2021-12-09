@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
+import { ProfilComponent } from './profil/profil.component';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
+    AddContactComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

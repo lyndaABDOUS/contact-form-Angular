@@ -1,25 +1,11 @@
-<header>
-  <div class="header">
-    Gestion de mes contacts
-  </div>
-</header>
-<body>
-  <div class="content">
-    <div class="div1">
-      <div class="title">Ajouter un contact</div>
-      <app-contact (newContactEvent)="newContact($event)"></app-contact>
-    </div>
-    <div class="div2">
-      <div class="title">La liste des contacts</div>
-      <ul>
-        <li *ngFor="let contact of contacts">
-          {{contact.name}}
-        </li>
-      </ul>
-    </div>
-    <div class="div3">
-      <div class="title">Details contact</div>
-      <input type="text" class="changeInfo">
-    </div>
-  </div>
-</body>
+<div>
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <span (click)="setActive(contact)">{{contact.name}}</span>
+    </li>
+  </ul>
+
+  <app-add-contact (newContactEmitter)="addContact($event)"></app-add-contact>
+
+  <app-profil [contact]="contactactive" (contactchanged)="saveContacts()"></app-profil>
+</div>

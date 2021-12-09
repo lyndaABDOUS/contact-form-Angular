@@ -1,0 +1,18 @@
+<form [formGroup]="contactForm">
+  <div>
+      <label>Nom complet</label>
+      <input type="text" formControlName="name">
+  </div>
+
+  <div>
+      <label>Pseudo</label>
+      <input type="text" formControlName="username">
+  </div>
+
+  <div>
+      <label>Email</label>
+      <input type="text" formControlName="email">
+  </div>
+
+  <button [disabled]="contactForm.invalid" (click)="onSubmit()">Ajouter</button>
+</form>

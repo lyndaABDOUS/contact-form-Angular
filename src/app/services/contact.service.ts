@@ -5,14 +5,13 @@ import { Contact } from '../models/contact';
   providedIn: 'root'
 })
 export class ContactService {
-
-  constructor() { }
-
-  set contacts(contact: Contact[]) {
-    localStorage.setItem('contacts', JSON.stringify(contact));
+  set contacts(c: Contact[]) {
+    localStorage.setItem('contacts', JSON.stringify(c));
   }
 
   get contacts(): Contact[] {
-    return JSON.parse(localStorage.getItem('contacts') || '');
+    return JSON.parse(localStorage.getItem('contacts') || '[]');
   }
+
+  constructor() { }
 }

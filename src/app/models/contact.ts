@@ -1,5 +1,6 @@
 export class Contact {
-  name!:string;
-  pseudo!: string;
-  email!: string
+  id!: number;
+  name!: string;
+  username!: string;
+  email!: string;
 }
